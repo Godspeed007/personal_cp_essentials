@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
-using namespace std;
+using namespace std;                                       //Time Comp=o(n)
+                                                           //Space Comp=o(1)
 struct node{
     int data;
     node * next;
