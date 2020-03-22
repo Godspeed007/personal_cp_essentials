@@ -33,7 +33,7 @@ int main()
     push(&head,12);
     push(&head,20);
     push(&head,10);
-    head->next->next->next->next;
+    head->next->next->next->next=head;
     floyd(head);
     return 0;
     
