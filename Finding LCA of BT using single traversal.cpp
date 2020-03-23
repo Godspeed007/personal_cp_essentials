@@ -1,3 +1,14 @@
+/* LCA of two nodes in BT is the lowest node farthest from the root.
+   Use of LCA is common while finding distance b/w two nodes.
+   Suppose we want to find distance b/w n1 and n2.
+   Then,:-- x = d1 + d2 - 2(y)
+          where 
+                x=distance b/w n1 and n2 
+                d1=distance b/w n1 and root
+                d2=distance b/w n2 and root
+                y= distance b/w LCA and root   */
+
+
 #include<bits/stdc++.h>
 using namespace std;
 struct node{                                          //A BT node
