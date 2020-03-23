@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
-struct node{
+struct node{                                          //A BT node
     struct node *left,*right;
     int key;
     
 };
-node *newNode(int key)
+node *newNode(int key)                                // To create a new node
 {
     node * temp =new node;
     temp->key=key;
@@ -16,13 +16,13 @@ struct node *findLCA(struct node *root,int n1,int n2)
 {
     if(root==NULL)
     return NULL;
-    if(root->key==n1||root->key==n2)
+    if(root->key==n1||root->key==n2)                   // Case when a node is considered a descendant of itself
     return root;
-    node *left_LCA=findLCA(root->left,n1,n2);
+    node *left_LCA=findLCA(root->left,n1,n2);         //Looking for keys in right and left subtrees
     node *right_LCA=findLCA(root->right,n1,n2);
-    if(left_LCA&&right_LCA)
+    if(left_LCA&&right_LCA)                           //If both above calls are giving NON-NULL then their root is the answer.
     return root;
-    return(left_LCA!=NULL)?left_LCA:right_LCA;
+    return(left_LCA!=NULL)?left_LCA:right_LCA;        //If left LCA is not NULL then return it(left_LCA),otherwise return right LCA
     
 }
 int main()
