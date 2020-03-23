@@ -1,12 +1,14 @@
 /* LCA of two nodes in BT is the lowest node which is shared ancestor of both nodes and farthest from the root.
-   Use of LCA is common while finding distance b/w two nodes.
+   Use of LCA : While finding distance b/w two nodes.
    Suppose we want to find distance b/w n1 and n2.
    Then,:-- x = d1 + d2 - 2(y)
           where 
                 x=distance b/w n1 and n2 
                 d1=distance b/w n1 and root
                 d2=distance b/w n2 and root
-                y= distance b/w LCA and root   */
+                y= distance b/w LCA and root   
+                NOTE:-- This implementation is done in bottom up fashion and Time Comp--o(n) and is single traversal method
+                There are other ways too,but this one is easier and efficient to implement. */
 
 
 #include<bits/stdc++.h>
