@@ -44,6 +44,6 @@ int main()
     head->next->next=newNode(22);
     head->next->next->next=newNode(34);
     head->next->next->next->next=newNode(45);
-    printnthnodefromlast(head,1);
+    printnthnodefromlast(head,1);             //1 is only for checking,can put any integer
     return 0;
 }
