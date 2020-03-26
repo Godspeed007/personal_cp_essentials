@@ -3,7 +3,7 @@
   Pros--Adding a vertex is easier.
         Saves o(V+E) space
         In worst case space consum. can be o(NV^2).
-  Cons--finding whether there is an edge b/w two nodes is difficult.*/
+  Cons--finding whether there is an edge b/w two nodes is difficult,is done in o(NV)*/
 #include<bits/stdc++.h>
 using namespace std;
 void addedge(vector<int>adj[],int u,int v)
