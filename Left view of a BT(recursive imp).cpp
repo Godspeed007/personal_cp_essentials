@@ -31,7 +31,7 @@ void leftview(node *root,int level,int*maxlevel)                     //Recursive
     leftview(root->right,level+1,maxlevel);
     
 }
-void leftviewenf(node *root)                                         //Kind of enforcing easy function which contains only a single parameter
+void leftviewenf(node *root)                                         //Kind of enforcing easy function(wrapper) which contains only a single parameter
 {
      int maxlevel=0;
      leftview(root,1,&maxlevel);
